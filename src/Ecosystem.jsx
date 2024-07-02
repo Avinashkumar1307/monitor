@@ -3,6 +3,7 @@ import top from './assets/top.png';
 import ltop from './assets/ltop.png';
 import mid from './assets/mid.png';
 import low from './assets/low.png';
+import Circle from './Circle';
 
 export default function Ecosystem() {
   const [imageStyles, setImageStyles] = useState({
@@ -79,9 +80,10 @@ export default function Ecosystem() {
           <p className='text-[12px] font-bold w-full text-center text-white'>Resilient Health <br /> Ecosystem</p>
         </div>
         <div className='w-[25.6px] h-[8.56px] flex justify-between items-center'>
-          <div className='w-[1.22px] h-[1.22px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[8.56px] h-[8.56px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[5.51px] h-[5.51px] bg-[#3DA3B5] rounded-full'></div>
+        <Circle len='1.22px' />
+        <Circle len='8.56px' />
+        <Circle len='5.51px' />
+          
         </div>
       </div>
       <div className='w-[336px] h-[52px] absolute top-[257px] left-[14px] flex justify-between items-center cursor-pointer' onClick={handleAccessQualityCareClick}>
@@ -89,21 +91,22 @@ export default function Ecosystem() {
           <p className='text-[12px] font-bold w-full text-center text-white'>Access & <br /> QUALITY CARE</p>
         </div>
         <div className='w-[182.56px] h-[8.56px] flex justify-between items-center'>
-          <div className='w-[1.22px] h-[1.22px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[5.51px] h-[5.51px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[3.67px] h-[3.67px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[3.67px] h-[3.67px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[1px] h-[1px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
+          <div className='w-[1.22px] h-[1.22px] '></div>
+          <Circle len='1.22px' />
+          <Circle len='2.45px' />
+          <Circle len='5.51px' />
+          <Circle len='2.45px' />
+          <Circle len='2.45px' />
+          <Circle len='3.67px' />
+          <Circle len='2.45px' />
+          <Circle len='2.45px' />
+          <Circle len='2.45px' />
+          <Circle len='3.67px' />
+          <Circle len='2.45px' />
+          <Circle len='2.45px' />
+          <Circle len='2.45px' />
+          <Circle len='1px' />
+          <Circle len='2.45px' />
         </div>
       </div>
       <div className='w-[294.69px] h-[36px] flex justify-between items-center  absolute top-[470px] left-[14px] cursor-pointer' onClick={handlePublicHealthClick}>
@@ -111,18 +114,18 @@ export default function Ecosystem() {
           <p className='text-[12px] font-bold w-full text-center text-white'>Public Health</p>
         </div>
         <div className='w-[134.69px] h-[8.56px] flex justify-between items-center'>
-          <div className='w-[1.22px] h-[1.22px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[8.56px] h-[8.56px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[5.51px] h-[5.51px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[3.67px] h-[3.67px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[3.67px] h-[3.67px] bg-[#3DA3B5] rounded-full'></div>
-          <div className='w-[2.45px] h-[2.45px] bg-[#3DA3B5] rounded-full'></div>
+          <Circle len='1.22px' />
+          <Circle len='2.45px' />
+          <Circle len='8.56px'/>
+          <Circle len='5.51px' />
+          <Circle len='2.45px' />
+          <Circle len='2.45px' />
+          <Circle len='3.67px' />
+          <Circle len='2.45px' />
+          <Circle len='2.45px' />
+          <Circle len='2.45px' />
+          <Circle len='3.67px' />
+          <Circle len='2.45px' />
         </div>
       </div>
       <div className='absolute top-[36px] left-[246px]'>

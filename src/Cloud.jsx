@@ -9,7 +9,7 @@ import cloud7 from './assets/cloud7.png';
 export default function Cloud() {
   return (
     <>
-    <div className='w-[601px] h-[279px] absolute top-[646px] left-[1577px]'>
+    <div className='w-[601px] h-[279px] absolute top-[646px] left-[1577px] '>
           <img src={cloud1} alt='cloud1' />
         </div>
         <div className='w-[602.76px] h-[279px] absolute top-[267px] left-[1797.24px] opacity-75'>

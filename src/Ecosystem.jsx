@@ -9,17 +9,17 @@ export default function Ecosystem() {
     top: { width: '1047px', height: '107px', opacity: 1 },
     ltop: { width: '802px', height: '353px', opacity: 1 },
     mid: { width: '160.09px', height: '86.82px', opacity: 1 },
-    low: { width: '1297px', height: '353px', opacity: 1 }
+    low: { width: '1297px', height: '353px', opacity: 1, top: '435px' } // Added top property for low image
   });
-
+  
   const handleResilientHealthClick = () => {
     if (imageStyles.top.width === '1047px') {
       setImageStyles({
         ...imageStyles,
-        top: { ...imageStyles.top, width: '1147px', height: '207px', opacity: 1 },
-        ltop: { ...imageStyles.ltop, opacity: 0.5 },
-        mid: { ...imageStyles.mid, opacity: 0.5 },
-        low: { ...imageStyles.low, opacity: 0.5 }
+        top: { ...imageStyles.top, width: '1100px', height: '130px', opacity: 1 },
+        ltop: { ...imageStyles.ltop, opacity: 0.2 },
+        mid: { ...imageStyles.mid, opacity: 0.2 },
+        low: { ...imageStyles.low, opacity: 0.2 }
       });
     } else {
       setImageStyles({
@@ -36,10 +36,10 @@ export default function Ecosystem() {
     if (imageStyles.ltop.width === '802px') {
       setImageStyles({
         ...imageStyles,
-        ltop: { ...imageStyles.ltop, width: '902px', height: '453px', opacity: 1 },
-        top: { ...imageStyles.top, opacity: 0.5 },
-        mid: { ...imageStyles.mid, opacity: 0.5 },
-        low: { ...imageStyles.low, opacity: 0.5 }
+        ltop: { ...imageStyles.ltop, width: '850px', height: '400px', opacity: 1 },
+        top: { ...imageStyles.top, opacity: 0.2 },
+        mid: { ...imageStyles.mid, opacity: 0.2 },
+        low: { ...imageStyles.low, opacity: 0.2 }
       });
     } else {
       setImageStyles({
@@ -56,24 +56,24 @@ export default function Ecosystem() {
     if (imageStyles.low.width === '1297px') {
       setImageStyles({
         ...imageStyles,
-        low: { ...imageStyles.low, width: '1397px', height: '453px', opacity: 1 },
-        top: { ...imageStyles.top, opacity: 0.5 },
-        ltop: { ...imageStyles.ltop, opacity: 0.5 },
-        mid: { ...imageStyles.mid, opacity: 0.5 }
+        low: { ...imageStyles.low, top: '390px', width: '1350px', height: '390px', opacity: 1 },
+        top: { ...imageStyles.top, opacity: 0.2 },
+        ltop: { ...imageStyles.ltop, opacity: 0.2 },
+        mid: { ...imageStyles.mid,width: '180px', height: '90px', opacity: 1 }
       });
     } else {
       setImageStyles({
         ...imageStyles,
-        low: { ...imageStyles.low, width: '1297px', height: '353px', opacity: 1 },
+        low: { ...imageStyles.low, top: '435px', width: '1297px', height: '353px', opacity: 1 },
         top: { ...imageStyles.top, opacity: 1 },
         ltop: { ...imageStyles.ltop, opacity: 1 },
-        mid: { ...imageStyles.mid, opacity: 1 }
+        mid: { ...imageStyles.mid,width: '160px', height: '86px', opacity: 1 }
       });
     }
   };
 
   return (
-    <div className='w-[1538px] h-full z-50 relative'>
+    <div className='w-[1538px] h-full z-50 relative brightness-95'>
       <div className='w-[202.6px] h-[52px] flex justify-between items-center absolute top-[90px] left-[14px] cursor-pointer' onClick={handleResilientHealthClick}>
         <div className='w-[167px] h-[52px] flex justify-between items-center bg-[#3DA3B5] rounded-[50px]'>
           <p className='text-[12px] font-bold w-full text-center text-white'>Resilient Health <br /> Ecosystem</p>

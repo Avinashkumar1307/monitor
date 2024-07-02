@@ -15,11 +15,11 @@ import cross from './assets/cross.svg';
 export default function App() {
   return (
     <>
-      <div className="w-[2400px] h-[900px] bgcolor relative">
+      <div className="w-[2400px] h-[900px] bgcolor relative brightness-150">
         <Cloud />
         {/* Header */}
         <div className="w-full h-[128px] flex flex-col items-center justify-center">
-          <div className='w-full h-[72px] flex justify-center headerBg text-[#ffffff]'>
+          <div className='w-full h-[72px] flex justify-center headerBg text-[#ffffff] backdrop-blur-xl '>
             <div className="w-[2320px] h-full flex justify-between items-center">
               <div className='w-[250px] h-[72px] flex items-center justify-start space-x-3 z-10'>
                 <div className='flex h-[24px] items-center space-x-2'>
@@ -43,11 +43,8 @@ export default function App() {
                   </div>
                   <div className='text-[16px]'>Chat</div>
                 </div>
-
               </div>
             </div>
-
-
           </div>
           <div className='w-[603px] h-[56px] flex justify-center items-end text-[#ffffff] relative' style={{ backgroundImage: `url(${project})` }}>
             <div className='w-[245px] h-[38px] flex justify-between'>
@@ -77,7 +74,7 @@ export default function App() {
               </div>
             </div>
             <div className='w-[367px] h-[611px] leftside rounded-2xl ml-[40px] mt-[28px] flex justify-center items-center '>
-              <div className='w-[367px] h-[480px] flex flex-col justify-between items-center '>
+              <div className='w-[367px] h-[480px] flex flex-col justify-between items-center backdrop-blur-[150px] '>
                 <div className='w-full h-[224px]  flex flex-col justify-between items-center'>
                   <div className='w-[48px] h-[48px] '>
                     <img src={eye} alt='eye' />

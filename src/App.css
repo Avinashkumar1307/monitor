@@ -1,7 +1,6 @@
 .bgcolor {
-  background: linear-gradient(98deg,rgba(0, 76, 87, 1),
-  rgba(4, 95, 108, 1),
-  rgba(0, 76, 87, 1));
+  background: linear-gradient(98deg, #004C57 100%, #045F6C 100%, #004C57 100%);
+
 
 
 }
@@ -17,5 +16,5 @@
 .leftside {
   background: linear-gradient(151.23deg, rgba(7, 131, 171, 1) 0%, rgba(11, 136, 147, 1) 52.5%, rgba(13, 147, 160, 1) 100%),
     linear-gradient(327.39deg, rgba(51, 68, 153, 1) 46.83%, rgba(51, 68, 153, 1) 92.64%);
-
+    box-shadow: 0px 9px 34px 0px #0000001A;
 }

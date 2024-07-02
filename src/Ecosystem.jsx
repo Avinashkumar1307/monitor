@@ -9,9 +9,9 @@ export default function Ecosystem() {
     top: { width: '1047px', height: '107px', opacity: 1 },
     ltop: { width: '802px', height: '353px', opacity: 1 },
     mid: { width: '160.09px', height: '86.82px', opacity: 1 },
-    low: { width: '1297px', height: '353px', opacity: 1, top: '435px' } // Added top property for low image
+    low: { width: '1297px', height: '353px', opacity: 1 }
   });
-  
+
   const handleResilientHealthClick = () => {
     if (imageStyles.top.width === '1047px') {
       setImageStyles({
@@ -56,18 +56,18 @@ export default function Ecosystem() {
     if (imageStyles.low.width === '1297px') {
       setImageStyles({
         ...imageStyles,
-        low: { ...imageStyles.low, top: '390px', width: '1350px', height: '390px', opacity: 1 },
+        low: { ...imageStyles.low, width: '1330px', height: '365px', opacity: 1 },
         top: { ...imageStyles.top, opacity: 0.2 },
         ltop: { ...imageStyles.ltop, opacity: 0.2 },
-        mid: { ...imageStyles.mid,width: '180px', height: '90px', opacity: 1 }
+        mid: { ...imageStyles.mid, width: '180px', height: '90px', opacity: 1 }
       });
     } else {
       setImageStyles({
         ...imageStyles,
-        low: { ...imageStyles.low, top: '435px', width: '1297px', height: '353px', opacity: 1 },
+        low: { ...imageStyles.low, width: '1297px', height: '353px', opacity: 1 },
         top: { ...imageStyles.top, opacity: 1 },
         ltop: { ...imageStyles.ltop, opacity: 1 },
-        mid: { ...imageStyles.mid,width: '160px', height: '86px', opacity: 1 }
+        mid: { ...imageStyles.mid, width: '160px', height: '86px', opacity: 1 }
       });
     }
   };
@@ -84,7 +84,7 @@ export default function Ecosystem() {
           <div className='w-[5.51px] h-[5.51px] bg-[#3DA3B5] rounded-full'></div>
         </div>
       </div>
-      <div className='w-[336px] h-[52px] absolute top-[257px] left-[14px] flex justify-between items-center cursor-pointer'  onClick={handleAccessQualityCareClick}>
+      <div className='w-[336px] h-[52px] absolute top-[257px] left-[14px] flex justify-between items-center cursor-pointer' onClick={handleAccessQualityCareClick}>
         <div className='w-[144px] h-[52px] flex justify-between items-center bg-[#3DA3B5] rounded-[50px]'>
           <p className='text-[12px] font-bold w-full text-center text-white'>Access & <br /> QUALITY CARE</p>
         </div>

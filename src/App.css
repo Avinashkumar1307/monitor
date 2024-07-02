@@ -1,0 +1,21 @@
+.bgcolor {
+  background: linear-gradient(98deg,rgba(0, 76, 87, 1),
+  rgba(4, 95, 108, 1),
+  rgba(0, 76, 87, 1));
+
+
+}
+
+.rightside {
+  background: linear-gradient(127.31deg, rgba(4, 59, 90, 0.68) 20.58%, rgba(5, 65, 71, 0.408) 54.93%, rgba(5, 65, 70, 0.496) 86.01%);
+}
+
+.headerBg {
+  background: linear-gradient(90deg, rgba(9, 31, 41, 0) 20.18%, rgba(9, 20, 41, 0.475) 50%, rgba(9, 24, 41, 0) 79.5%);
+}
+
+.leftside {
+  background: linear-gradient(151.23deg, rgba(7, 131, 171, 1) 0%, rgba(11, 136, 147, 1) 52.5%, rgba(13, 147, 160, 1) 100%),
+    linear-gradient(327.39deg, rgba(51, 68, 153, 1) 46.83%, rgba(51, 68, 153, 1) 92.64%);
+
+}

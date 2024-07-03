@@ -4,6 +4,9 @@ import ltop from './assets/ltop.png';
 import mid from './assets/mid.png';
 import low from './assets/low.png';
 import Circle from './Circle';
+import Top from './Top';
+import Mid from './Mid';
+import Low from './Low';
 
 export default function Ecosystem() {
   const [imageStyles, setImageStyles] = useState({
@@ -80,10 +83,10 @@ export default function Ecosystem() {
           <p className='text-[12px] font-bold w-full text-center text-white'>Resilient Health <br /> Ecosystem</p>
         </div>
         <div className='w-[25.6px] h-[8.56px] flex justify-between items-center'>
-        <Circle len='1.22px' />
-        <Circle len='8.56px' />
-        <Circle len='5.51px' />
-          
+          <Circle len='1.22px' />
+          <Circle len='8.56px' />
+          <Circle len='5.51px' />
+
         </div>
       </div>
       <div className='w-[336px] h-[52px] absolute top-[257px] left-[14px] flex justify-between items-center cursor-pointer' onClick={handleAccessQualityCareClick}>
@@ -116,7 +119,7 @@ export default function Ecosystem() {
         <div className='w-[134.69px] h-[8.56px] flex justify-between items-center'>
           <Circle len='1.22px' />
           <Circle len='2.45px' />
-          <Circle len='8.56px'/>
+          <Circle len='8.56px' />
           <Circle len='5.51px' />
           <Circle len='2.45px' />
           <Circle len='2.45px' />
@@ -128,18 +131,9 @@ export default function Ecosystem() {
           <Circle len='2.45px' />
         </div>
       </div>
-      <div className='absolute top-[36px] left-[246px]'>
-        <img src={top} alt='Top' className='w-[1047px] h-[107px] transition-all duration-1000' style={imageStyles.top} />
-      </div>
-      <div className='absolute top-[50px] left-[379px]'>
-        <img src={ltop} alt='Top' className='w-[802px] h-[353px] transition-all duration-1000' style={imageStyles.ltop} />
-      </div>
-      <div className='absolute top-[356px] left-[689px]'>
-        <img src={mid} alt='Top' className='w-[160.09px] h-[86.82px] transition-all duration-1000' style={imageStyles.mid} />
-      </div>
-      <div className='absolute top-[435px] left-[121px]'>
-        <img src={low} alt='Top' className='w-[1297px] h-[353px] transition-all duration-1000' style={imageStyles.low} />
-      </div>
+      <Top />
+      <Mid />
+      <Low />
     </div>
   );
 }

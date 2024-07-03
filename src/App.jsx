@@ -15,7 +15,8 @@ import cross from './assets/cross.svg';
 export default function App() {
   return (
     <>
-      <div className="w-[2400px] h-[900px] bgcolor relative brightness-150">
+      <div className="w-[2400px] h-[900px] font-aktiv-grotesk bg-[#004C57] relative brightness-150">
+       
         <Cloud />
         {/* Header */}
         <div className="w-full h-[128px] flex flex-col items-center justify-center">
@@ -73,9 +74,9 @@ export default function App() {
                 Health Ecosystem
               </div>
             </div>
-            <div className='w-[367px] h-[611px] leftside rounded-2xl ml-[40px] mt-[28px] flex justify-center items-center '>
-              <div className='w-[367px] h-[480px] flex flex-col justify-between items-center backdrop-blur-[150px] '>
-                <div className='w-full h-[224px]  flex flex-col justify-between items-center'>
+            <div className='w-[367px] h-[611px] leftside rounded-2xl ml-[40px] mt-[28px] flex justify-center items-center backdrop-blur-3xl'>
+              <div className='w-[367px] h-[480px] flex flex-col justify-between items-center backdrop-blur-3xl '>
+                <div className='w-full h-[224px]  flex flex-col justify-between items-center backdrop-blur-3xl'>
                   <div className='w-[48px] h-[48px] '>
                     <img src={eye} alt='eye' />
                   </div>

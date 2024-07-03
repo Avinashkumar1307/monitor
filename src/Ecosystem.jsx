@@ -1,78 +1,29 @@
 import React, { useState } from 'react';
-import top from './assets/top.png';
-import ltop from './assets/ltop.png';
-import mid from './assets/mid.png';
-import low from './assets/low.png';
 import Circle from './Circle';
 import Top from './Top';
 import Mid from './Mid';
 import Low from './Low';
 
 export default function Ecosystem() {
-  const [imageStyles, setImageStyles] = useState({
-    top: { width: '1047px', height: '107px', opacity: 1 },
-    ltop: { width: '802px', height: '353px', opacity: 1 },
-    mid: { width: '160.09px', height: '86.82px', opacity: 1 },
-    low: { width: '1297px', height: '353px', opacity: 1 }
-  });
+  const [opacity, setOpacity] = useState({ top: 100, mid: 100, low: 100 });
 
   const handleResilientHealthClick = () => {
-    if (imageStyles.top.width === '1047px') {
-      setImageStyles({
-        ...imageStyles,
-        top: { ...imageStyles.top, width: '1100px', height: '130px', opacity: 1 },
-        ltop: { ...imageStyles.ltop, opacity: 0.2 },
-        mid: { ...imageStyles.mid, opacity: 0.2 },
-        low: { ...imageStyles.low, opacity: 0.2 }
-      });
-    } else {
-      setImageStyles({
-        ...imageStyles,
-        top: { ...imageStyles.top, width: '1047px', height: '107px', opacity: 1 },
-        ltop: { ...imageStyles.ltop, opacity: 1 },
-        mid: { ...imageStyles.mid, opacity: 1 },
-        low: { ...imageStyles.low, opacity: 1 }
-      });
-    }
+      setOpacity({ top: 100, mid: 20, low: 20 });
   };
 
   const handleAccessQualityCareClick = () => {
-    if (imageStyles.ltop.width === '802px') {
-      setImageStyles({
-        ...imageStyles,
-        ltop: { ...imageStyles.ltop, width: '850px', height: '400px', opacity: 1 },
-        top: { ...imageStyles.top, opacity: 0.2 },
-        mid: { ...imageStyles.mid, opacity: 0.2 },
-        low: { ...imageStyles.low, opacity: 0.2 }
-      });
+    if (opacity.mid !== 100) {
+      setOpacity({ top: 20, mid: 100, low: 20 });
     } else {
-      setImageStyles({
-        ...imageStyles,
-        ltop: { ...imageStyles.ltop, width: '802px', height: '353px', opacity: 1 },
-        top: { ...imageStyles.top, opacity: 1 },
-        mid: { ...imageStyles.mid, opacity: 1 },
-        low: { ...imageStyles.low, opacity: 1 }
-      });
+      setOpacity({ top: 100, mid: 100, low: 100 });
     }
   };
 
   const handlePublicHealthClick = () => {
-    if (imageStyles.low.width === '1297px') {
-      setImageStyles({
-        ...imageStyles,
-        low: { ...imageStyles.low, width: '1330px', height: '365px', opacity: 1 },
-        top: { ...imageStyles.top, opacity: 0.2 },
-        ltop: { ...imageStyles.ltop, opacity: 0.2 },
-        mid: { ...imageStyles.mid, width: '180px', height: '90px', opacity: 1 }
-      });
+    if (opacity.low !== 100) {
+      setOpacity({ top: 20, mid: 20, low: 100 });
     } else {
-      setImageStyles({
-        ...imageStyles,
-        low: { ...imageStyles.low, width: '1297px', height: '353px', opacity: 1 },
-        top: { ...imageStyles.top, opacity: 1 },
-        ltop: { ...imageStyles.ltop, opacity: 1 },
-        mid: { ...imageStyles.mid, width: '160px', height: '86px', opacity: 1 }
-      });
+      setOpacity({ top: 100, mid: 100, low: 100 });
     }
   };
 
@@ -86,7 +37,6 @@ export default function Ecosystem() {
           <Circle len='1.22px' />
           <Circle len='8.56px' />
           <Circle len='5.51px' />
-
         </div>
       </div>
       <div className='w-[336px] h-[52px] absolute top-[257px] left-[14px] flex justify-between items-center cursor-pointer' onClick={handleAccessQualityCareClick}>
@@ -131,9 +81,9 @@ export default function Ecosystem() {
           <Circle len='2.45px' />
         </div>
       </div>
-      <Top />
-      <Mid />
-      <Low />
+      <Top op={opacity.top} />
+      <Mid op={opacity.mid} />
+      <Low op={opacity.low} />
     </div>
   );
 }

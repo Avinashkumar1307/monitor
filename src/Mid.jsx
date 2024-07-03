@@ -16,9 +16,9 @@ import ring from './assets/ring.svg';
 import primary from './assets/primary.svg';
 import tertairy from './assets/tertairy.svg';
 import secondary from './assets/secondary.svg';
-export default function Mid() {
+export default function Mid({op}) {
     return (
-        <div className='w-[802px] h-[353px] absolute top-[50px] left-[379px] '>
+        <div className={`w-[802px] h-[353px] absolute top-[50px] left-[379px] opacity-${op} transition duration-150`}>
             <div className='w-[301px] h-[130px]  absolute top-[53px] left-[245px] z-20'>
                 <div className='w-[146px] h-[90px] absolute top-[40px] left-[77px] flex justify-center items-center'>
                     <div className='w-[117.46px] h-[72.98px] ' style={{ backgroundImage: `url(${digital})`, backgroundSize: 'contain', backgroundSize: '117.46px  72.98px', backgroundPosition: '0px 0px', backgroundRepeat: 'no-repeat', }}>

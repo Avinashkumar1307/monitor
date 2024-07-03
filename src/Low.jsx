@@ -38,13 +38,14 @@ import pic6 from './assets/pic6.svg';
 import pic7 from './assets/pic7.svg';
 import pic8 from './assets/pic8.svg';
 import pic9 from './assets/pic9.svg';
-export default function Low() {
+export default function Low({op}) {
+
     return (
         <>
-            <div className='w-[160.09px] h-[86.82px] absolute top-[356px] left-[689px] z-10'>
+            <div className={`w-[160.09px] h-[86.82px] absolute top-[356px] left-[689px] z-10 opacity-${op}`}>
                 <div className='w-[160.04px] h-[67.34px] absolute top-[20px] left-[0px]' style={{ backgroundImage: `url(${centre})`, backgroundSize: '160.04px 67.34px', backgroundPosition: '0px 0px', backgroundRepeat: 'no-repeat', }}></div>
             </div>
-            <div className='w-[1297px] h-[353px] absolute top-[435px] left-[121px] '>
+            <div className={`w-[1297px] h-[353px] absolute top-[435px] left-[121px] opacity-${op}`}>
                 <div className='w-[1038px] h-[381px] absolute -top-[32px] left-[129px]' >
                     <div className='absolute'><img src={rec1} alt='rec1' /></div>
                     <div className='absolute'><img src={rec2} alt='rec1' /></div>
@@ -149,7 +150,7 @@ export default function Low() {
 
                 </div>
 
-                <div className='w-[575.99px] h-[114px] absolute top-[67px] left-[358px] z-10' style={{ backgroundImage: `url(${line})`, backgroundSize: '575.99px 114px', backgroundPosition: '0px 0px', backgroundRepeat: 'no-repeat', }}>
+                <div className='w-[575.99px] h-[114px] absolute top-[67px] left-[358px] z-5' style={{ backgroundImage: `url(${line})`, backgroundSize: '575.99px 114px', backgroundPosition: '0px 0px', backgroundRepeat: 'no-repeat', }}>
                 </div>
 
 
